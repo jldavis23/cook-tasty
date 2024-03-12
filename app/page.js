@@ -19,7 +19,7 @@ export default function Home() {
         } else {
             setFilteredRecipes(allRecipes.filter(recipe => recipe.category === filterApplied))
         }
-    }, [filterApplied])
+    }, [filterApplied, allRecipes])
 
     const openRecipe = (recipe) => {
         setRecipeToView(recipe)

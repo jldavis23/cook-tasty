@@ -1,6 +1,14 @@
 'use client'
 
 export function ViewRecipe({ recipeToView, setRecipeToView, setInViewMode, allRecipes, setAllRecipes }) {
+
+    const deleteRecipe = () => {
+        const updatedRecipes = allRecipes.filter(recipe => recipe.id !== recipeToView.id)
+        setAllRecipes(updatedRecipes)
+        setInViewMode(false)
+        window.scrollTo(0, 0);
+    }
+
     return (
         <section className='max-w-5xl m-auto p-8'>
             <div className={`h-36 bg-[url('/${recipeToView.imageURL}')] bg-cover bg-center`}>
@@ -36,12 +44,23 @@ export function ViewRecipe({ recipeToView, setRecipeToView, setInViewMode, allRe
 
                     <div>
                         <button className="btn btn-sm font-normal font-lato m-2">EDIT</button>
-                        <button className="btn btn-sm font-normal font-lato m-2">DELETE</button>
+                        <button className="btn btn-sm font-normal font-lato m-2" onClick={() => document.getElementById('delete_modal').showModal()}>DELETE</button>
                     </div>
                 </div>
-
-
             </div>
+
+            {/* Delete Modal */}
+            <dialog id="delete_modal" className="modal modal-bottom sm:modal-middle">
+                <div className="modal-box">
+                    <h3 className="text-xl">Are you sure you want to delete the <span className="font-bold">{recipeToView.name}</span> recipe?</h3>
+                    <div className="modal-action">
+                        <div>
+                            <button className="btn font-normal font-lato mr-2" onClick={deleteRecipe}>YES</button>
+                            <button className="btn font-formal font-lato" onClick={() => document.getElementById('delete_modal').close()}>NO</button>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
 
         </section>
     )
