@@ -1,23 +1,25 @@
 'use client'
 import recipeData from './data/recipes.json'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ViewRecipe } from './components/ViewRecipe';
 
 export default function Home() {
     const categories = [...new Set(recipeData.map(recipe => recipe.category))];
-    const [recipes, setRecipes] = useState(recipeData)
+    const [allRecipes, setAllRecipes] = useState(recipeData)
+    const [filteredRecipes, setFilteredRecipes] = useState([])
     const [inViewMode, setInViewMode] = useState(false)
     const [recipeToView, setRecipeToView] = useState({})
+    const [filterApplied, setFilterApplied] = useState('all')
 
-    const filterRecipes = (c) => {
-        if (c === 'all') {
-            setRecipes(recipeData)
-        } else if (c === 'favorites') {
-            setRecipes(recipeData.filter(recipe => recipe.isFavorite)) //going to have to change
+    useEffect(() => {
+        if (filterApplied === 'all') {
+            setFilteredRecipes(allRecipes)
+        } else if (filterApplied === 'favorites') {
+            setFilteredRecipes(allRecipes.filter(recipe => recipe.isFavorite))
         } else {
-            setRecipes(recipeData.filter(recipe => recipe.category === c))
+            setFilteredRecipes(allRecipes.filter(recipe => recipe.category === filterApplied))
         }
-    }
+    }, [filterApplied])
 
     const openRecipe = (recipe) => {
         setRecipeToView(recipe)
@@ -35,16 +37,16 @@ export default function Home() {
 
                     {/* Filter by Category Buttons */}
                     <div className="filter-btns flex flex-col flex-wrap min-[575px]:flex-row">
-                        <input className="btn btn-outline font-normal" type="radio" name="categories" aria-label="all" onClick={() => filterRecipes('all')} defaultChecked />
+                        <input className="btn btn-outline font-normal" type="radio" name="categories" aria-label="all" onChange={() => setFilterApplied('all')} checked={filterApplied === 'all'} />
                         {categories.map((category, i) => (
-                            <input key={i} className="btn btn-outline font-normal" type="radio" name="categories" aria-label={category} onClick={() => filterRecipes(category)} />
+                            <input key={i} className="btn btn-outline font-normal" type="radio" name="categories" aria-label={category} onChange={() => setFilterApplied(category)} checked={filterApplied === category}/>
                         ))}
-                        <input className="btn btn-outline font-normal" type="radio" name="categories" aria-label="favorites" onClick={() => filterRecipes('favorites')} />
+                        <input className="btn btn-outline font-normal" type="radio" name="categories" aria-label="favorites" onChange={() => setFilterApplied('favorites')} checked={filterApplied === 'favorites'}/>
                     </div>
 
                     {/* List of Recipes */}
                     <div className='grid min-[575px]:grid-cols-2 lg:grid-cols-3 gap-6'>
-                        {recipes.map((recipe) => (
+                        {filteredRecipes.map((recipe) => (
                             <figure key={recipe.id} className='shadow-md cursor-pointer hover:shadow-2xl transition-all' onClick={() => openRecipe(recipe)}>
                                 <img src={recipe.imageURL} alt={recipe.name} />
                                 <figcaption className='p-5 flex flex-col gap-2'>
@@ -59,7 +61,7 @@ export default function Home() {
                     </div>
                 </section>
             ) : (
-                <ViewRecipe recipeToView={recipeToView} setRecipeToView={setRecipeToView} setInViewMode={setInViewMode} recipes={recipes} setRecipes={setRecipes} />
+                <ViewRecipe recipeToView={recipeToView} setRecipeToView={setRecipeToView} setInViewMode={setInViewMode} allRecipes={allRecipes} setAllRecipes={setAllRecipes} />
             )}
 
 

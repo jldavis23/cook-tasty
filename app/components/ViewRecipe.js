@@ -1,11 +1,11 @@
 'use client'
 
-export function ViewRecipe({ recipeToView, setRecipeToView, setInViewMode, recipes, setRecipes }) {
-    console.log(recipeToView.steps)
-
+export function ViewRecipe({ recipeToView, setRecipeToView, setInViewMode, allRecipes, setAllRecipes }) {
     return (
         <section className='max-w-5xl m-auto p-8'>
-            <div className={`h-36 bg-[url('/${recipeToView.imageURL}')] bg-cover bg-center`}></div>
+            <div className={`h-36 bg-[url('/${recipeToView.imageURL}')] bg-cover bg-center`}>
+                <button className="btn btn-primary m-3" onClick={() => setInViewMode(false)}>back</button>
+            </div>
 
             <div className="grid min-[1000px]:grid-cols-3">
                 <div className="bg-primary text-white p-5 flex flex-col gap-5">
