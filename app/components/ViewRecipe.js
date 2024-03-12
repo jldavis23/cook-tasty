@@ -2,6 +2,18 @@
 
 export function ViewRecipe({ recipeToView, setRecipeToView, setInViewMode, allRecipes, setAllRecipes }) {
 
+    const toggleFavorite = () => {
+        const updatedRecipes = allRecipes.map((recipe) => {
+            if (recipe.id === recipeToView.id) {
+                setRecipeToView({ ...recipe, isFavorite: !recipe.isFavorite })
+                return { ...recipe, isFavorite: !recipe.isFavorite }
+            } else {
+                return recipe
+            }
+        })
+        setAllRecipes(updatedRecipes)
+    }
+
     const deleteRecipe = () => {
         const updatedRecipes = allRecipes.filter(recipe => recipe.id !== recipeToView.id)
         setAllRecipes(updatedRecipes)
@@ -32,7 +44,7 @@ export function ViewRecipe({ recipeToView, setRecipeToView, setInViewMode, allRe
                         <p className="italic text-accent font-sm">Source: {recipeToView.source}</p>
                     </div>
 
-                    <div><button className="btn font-normal font-lato btn-sm btn-outline btn-primary">ADD TO FAVORITES</button></div>
+                    <div><button className="btn font-normal font-lato btn-sm btn-outline btn-primary" onClick={toggleFavorite}>{recipeToView.isFavorite ? 'REMOVE FROM FAVORITES' : 'ADD TO FAVORITES'}</button></div>
 
                     <h2 className="font-bold text-2xl">Steps</h2>
 
