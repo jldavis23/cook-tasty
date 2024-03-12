@@ -6,7 +6,24 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        arvo: ['Arvo', 'serif'],
+        lato: ['Lato', 'sans-serif']
+      }
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["light"],
+          "primary": "#F3644B",
+          "secondary": "#7FCC2A",
+          "accent": "#7B7B7B",
+        }
+      }
+    ]
+  }
 };
