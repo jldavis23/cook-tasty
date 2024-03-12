@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className='font-arvo'>
-        <nav className="bg-base-100 shadow fixed top-0 w-full">
+        <nav className="bg-base-100 shadow fixed top-0 w-full z-50">
           <div className="navbar font-lato max-w-5xl m-auto">
             <div className="navbar-start">
               <div className="dropdown">

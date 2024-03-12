@@ -1,0 +1,221 @@
+[
+    {
+        "id": 1,
+        "name": "Spaghetti Bolognese",
+        "category": "dinner",
+        "time": "40 min",
+        "steps": [
+            "Put the onion and oil in a large pan and fry over a fairly high heat for 3-4 mins.",
+            "Add the garlic and mince and fry until they both brown. Add the mushrooms and herbs, and cook for another couple of mins.",
+            "Stir in the tomatoes, beef stock, tomato ketchup or puree, Worcestershire sauce and seasoning. Bring to the boil, then reduce the heat, cover and simmer, stirring occasionally, for 30 mins.",
+            "Meanwhile, cook the spaghetti in a large pan of boiling, salted water, according to packet instructions. Drain well, run hot water through it, put it back in the pan and add a dash of olive oil, if you like, then stir in the meat sauce.",
+            "Serve in hot bowls and hand round Parmesan cheese, for sprinkling on top."
+        ],
+        "ingredients": [
+            "2 onions",
+            "1tbsp olive oil",
+            "1 clove garlic",
+            "500g lean minced beef",
+            "90g mushrooms",
+            "1tsp dried oregano",
+            "400g can tomatoes",
+            "300ml hot beef stock",
+            "1tbsp tomato puree",
+            "1tbsp worcestershire sauce",
+            "350g spaghetti",
+            "parmesan"
+        ],
+        "imageURL": "spaghetti.jpg",
+        "source": "MealDB",
+        "isFavorite": false
+    },
+    {
+        "id": 2,
+        "name": "Spicy Arrabiata Penne",
+        "category": "dinner",
+        "time": "30 min",
+        "steps": [
+            "Bring a large pot of water to a boil. Add kosher salt to the boiling water, then add the pasta. Cook according to the package instructions, about 9 minutes.",
+            "In a large skillet over medium-high heat, add the olive oil and heat until the oil starts to shimmer. Add the garlic and cook, stirring, until fragrant, 1 to 2 minutes. Add the chopped tomatoes, red chile flakes, Italian seasoning and salt and pepper to taste. Bring to a boil and cook for 5 minutes.",
+            "Remove from the heat and add the chopped basil. Drain the pasta and add it to the sauce. Garnish with Parmigiano-Reggiano flakes and more basil and serve warm."
+        ],
+        "ingredients": [
+            "1lb penne rigate",
+            "1/4 cup olive oil",
+            "3 garlic cloves",
+            "1 tin chopped tomatoes",
+            "1/2 tsp red chile flakes",
+            "1/2 tsp italian seasoning",
+            "6 basil leaves",
+            "sprinkling of Parmigiano-Reggiano"
+        ],
+        "imageURL": "penne.jpg",
+        "source": "MealDB",
+        "isFavorite": false
+    },
+    {
+        "id": 3,
+        "name": "Apple Frangipan Tart",
+        "category": "dessert",
+        "time": "1 hour",
+        "steps": [
+            "Preheat the oven to 200C/180C Fan/Gas 6. Put the biscuits in a large re-sealable freezer bag and bash with a rolling pin into fine crumbs. Melt the butter in a small pan, then add the biscuit crumbs and stir until coated with butter. Tip into the tart tin and, using the back of a spoon, press over the base and sides of the tin to give an even layer. Chill in the fridge while you make the filling.",
+            "Cream together the butter and sugar until light and fluffy. You can do this in a food processor if you have one. Process for 2-3 minutes. Mix in the eggs, then add the ground almonds and almond extract and blend until well combined.",
+            "Peel the apples, and cut thin slices of apple. Do this at the last minute to prevent the apple going brown. Arrange the slices over the biscuit base. Spread the frangipane filling evenly on top. Level the surface and sprinkle with the flaked almonds. Bake for 20-25 minutes until golden-brown and set.",
+            "Remove from the oven and leave to cool for 15 minutes. Remove the sides of the tin. An easy way to do this is to stand the tin on a can of beans and push down gently on the edges of the tin. Transfer the tart, with the tin base attached, to a serving plate. Serve warm with cream, crème fraiche or ice cream."
+        ],
+        "ingredients": [
+            "6oz digestive biscuits",
+            " 2oz butter",
+            "7oz Bramley apples",
+            " 3oz butter, softened",
+            "3 oz caster sugar",
+            "2 free-range eggs, beaten",
+            "3oz ground almonds",
+            "1 tsp almond extract",
+            "1 3/4oz flaked almonds"
+        ],
+        "imageURL": "tart.jpg",
+        "source": "MealDB",
+        "isFavorite": false
+    },
+    {
+        "id": 4,
+        "name": "Avocado Toast",
+        "category": "breakfast",
+        "time": "10 min",
+        "steps": [
+            "Mash the avocado with a fork in a shallow bowl until chunky. Season with fine salt and black pepper.", "Toast the bread until browned and crisp.", "Lightly rub 1 side of each slice with the cut side of the garlic until fragrant; discard the garlic.", "Lightly brush the toasts with oil, and season with fine salt and pepper.", "Divide the mashed avocado evenly among the toasts, and top with more flaky sea salt, more black pepper and red pepper flakes if using."
+        ],
+        "ingredients": [
+            "1 8oz ripe avocado",
+            "salt",
+            "pepper",
+            "4 slices bread",
+            "1 garlic clove",
+            "2 Tbs extra-virgin olive oil"
+        ],
+        "imageURL": "avocado-toast.jpg",
+        "source": "Food Network",
+        "isFavorite": false
+    },
+    {
+        "id": 5,
+        "name": "Blueberry French Toast",
+        "category": "breakfast",
+        "time": "30 min",
+        "steps": ["Cut bread into 1-in. cubes; place half in a greased 13x9-in. baking dish. Cut cream cheese into 1-in. cubes; place over bread. Top with blueberries and remaining bread cubes.", "Whisk the eggs, milk and syrup in a large bowl. Pour over bread mixture. Cover and refrigerate for 8 hours or overnight.", "Remove from the refrigerator 30 minutes before baking. Cover and bake at 350° for 30 minutes. Uncover; bake 25-30 minutes longer or until a knife inserted in center comes out clean.", "Combine the sugar, water and cornstarch until smooth in a small saucepan. Bring to a boil over medium heat; cook and stir until thickened, 3 minutes. Stir in blueberries; bring to a boil. Reduce heat and simmer until berries burst, 8-10 minutes. Remove from heat; stir in butter. Serve with French toast."],
+        "ingredients": [
+            "12 slices white bread",
+            "2 pkgs cream cheese",
+            "1 cup blueberries",
+            "12 large eggs",
+            "2 cups milk",
+            "1/3 cup maple syrup or honey"
+        ],
+        "imageURL": "french-toast.jpg",
+        "source": "Taste of Home",
+        "isFavorite": false
+    },
+    {
+        "id": 6,
+        "name": "Grilled Cheese",
+        "category": "lunch",
+        "time": "20 min",
+        "steps": ["Preheat skillet over medium heat. Generously butter one side of a slice of bread. Place bread butter-side-down onto skillet bottom and add 1 slice of cheese. Butter a second slice of bread on one side and place butter-side-up on top of sandwich. Grill until lightly browned and flip over; continue grilling until cheese is melted.", "Repeat with remaining 2 slices of bread, butter and slice of cheese."],
+        "ingredients": [
+            "4 slices white bread",
+            "2 slices cheddar cheese",
+            "3 Tbsp butter"
+        ],
+        "imageURL": "grilledcheese.jpg",
+        "source": "All Recipes.com",
+        "isFavorite": false
+    },
+    {
+        "id": 7,
+        "name": "BLT Sandwich",
+        "category": "lunch",
+        "time": "15 min",
+        "steps": ["Cook the bacon in a large, deep skillet over medium-high heat until evenly browned, about 10 minutes. Drain the bacon slices on a paper towel-lined plate.", "Arrange the cooked bacon, lettuce, and tomato slices on one slice of bread. Spread one side of remaining bread slice with the mayonnaise. Bring the two pieces together to make a sandwich."],
+        "ingredients": [
+            "4 slices bacon",
+            "2 slices bread, toasted",
+            "2 leaves lettuce",
+            "1 Tbsp mayonnaise",
+            "2 slices tomato"
+        ],
+        "imageURL": "blt.jpg",
+        "source": "All Recipes.com",
+        "isFavorite": false
+    },
+    {
+        "id": 8,
+        "name": "Chocolate Chip Cookies",
+        "category": "dessert",
+        "time": "1 hour",
+        "steps": ["Preheat oven to 350 degrees F (175 degrees C).", "Cream together the butter, white sugar, and brown sugar until smooth. Beat in the eggs one at a time, then stir in the vanilla. Dissolve baking soda in hot water. Add to batter along with salt. Stir in flour, chocolate chips, and nuts. Drop by large spoonfuls onto ungreased pans.", "Bake for about 10 minutes in the preheated oven, or until edges are nicely browned."],
+        "ingredients": [
+            "1 cup butter, softened",
+            "2 tsp hot water",
+            "1/2 tsp salt",
+            "1 cup white sugar",
+            "3 cups flour",
+            "1 cup packed brown sugar",
+            "2 cups semisweet chocolate chips",
+            "2 eggs",
+            "1 cup chopped walnuts"
+        ],
+        "imageURL": "cookie.jpg",
+        "source": "All Recipes.com",
+        "isFavorite": false
+    },
+    {
+        "id": 9,
+        "name": "Caesar Salad",
+        "category": "lunch",
+        "time": "20 min",
+        "steps": ["In a medium bowl, whisk together the egg yolk, lemon juice, garlic, Worcestershire, pepper flakes, mustard, and anchovies. Slowly whisk in the oils to emulsify. Season, to taste, with salt and pepper.", "Place the lettuce in a large bowl. Sprinkle with Parmesan and black pepper. Drizzle with desired amount of dressing and toss well. Sprinkle top with croutons."],
+        "ingredients": [
+            "1 egg yolk",
+            "3 Tbsp fresh lemon juice",
+            "1 Tbsp minced garlic",
+            "1/2 tsp Worcestershire sauce",
+            "1/4 tsp red pepper flakes",
+            "1 Tbsp Dijon mustard",
+            "2 anchovy fillets, mashed",
+            "Scant 1 cupt vegetable oil",
+            "1/3 cup extra-virgin olive oil",
+            "Salt and freshly ground black pepper",
+            "1 large head romaine lettuce, cut",
+            "freshly grated Parmesan",
+            "2 cups croutons"
+        ],
+        "imageURL": "salad.jpg",
+        "source": "Food Network",
+        "isFavorite": false
+    },
+    {
+        "id": 10,
+        "name": "Clam chowder",
+        "category": "dinner",
+        "time": "40 min",
+        "steps": ["Rinse the clams in several changes of cold water and drain well. Tip the clams into a large pan with 500ml of water. Cover, bring to the boil and simmer for 2 mins until the clams have just opened. Tip the contents of the pan into a colander over a bowl to catch the clam stock. When cool enough to handle, remove the clams from their shells - reserving a handful of empty shells for presentation if you want. Strain the clam stock into a jug, leaving any grit in the bottom of the bowl. You should have around 800ml stock.", "Heat the butter in the same pan and sizzle the bacon for 3-4 mins until it starts to brown. Stir in the onion, thyme and bay and cook everything gently for 10 mins until the onion is soft and golden.", "Scatter over the flour and stir in to make a sandy paste, cook for 2 mins more, then gradually stir in the clam stock then the milk and the cream.", "Throw in the potatoes, bring everything to a simmer and leave to bubble away gently for 10 mins or until the potatoes are cooked. Use a fork to crush a few of the potato chunks against the side of the pan to help thicken - you still want lots of defined chunks though.", "Stir through the clam meat and the few clam shells, if you've gone down that route, and simmer for a minute to reheat. Season with plenty of black pepper and a little salt, if needed, then stir through the parsley just before ladling into bowls or hollowed-out crusty rolls."],
+        "imageURL": "chowder.jpg",
+        "ingredients": [
+            "0.5kg Clams",
+            "50g Butter",
+            "150g Bacon",
+            "1 finely chopped Onion",
+            "sprigs of fresh Thyme", 
+            "1 Bay Leaf",
+            "1 tbls Plain Flour",
+            "150ml Milk",
+            "150ml Double Cream",
+            "2 medium Potatoes",
+            "Chopped Parsley"
+        ],
+        "source": "MealDB",
+        "isFavorite": false
+    }
+]
