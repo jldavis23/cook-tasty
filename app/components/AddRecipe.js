@@ -3,7 +3,7 @@ import { useState } from "react"
 
 export function AddRecipe({ allRecipes, setAllRecipes, id, setID, categories }) {
     const [newRecipe, setNewRecipe] = useState({
-        id: id, name: '', category: '', time: '', ingredients: [''], steps: [''], imageURL: '/default.jpg', source: 'user'
+        id: id, name: '', category: '', time: '', ingredients: [''], steps: [''], imageURL: 'default.jpg', source: 'user'
     })
 
     const handleSubmit = (e) => {

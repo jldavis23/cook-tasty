@@ -39,8 +39,8 @@ export function ViewRecipe({ recipeToView, setRecipeToView, setInRecipeViewMode,
 
     return (
         <section className='max-w-5xl m-auto p-8'>
-            <div className={`h-36 bg-[url('/${recipeToView.imageURL}')] bg-cover bg-center`}>
-                <button className="btn btn-primary m-3" onClick={() => setInRecipeViewMode(false)}>back</button>
+            <div style={{ backgroundImage: `url('/${recipeToView.imageURL}')` }} className={`h-36 bg-cover bg-center`} >
+                <button className="btn btn-primary m-3" onClick={() => setInRecipeViewMode(false)}>←</button>
             </div>
 
             <div className="grid min-[1000px]:grid-cols-3">
