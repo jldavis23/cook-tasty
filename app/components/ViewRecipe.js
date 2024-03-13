@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react"
 
-export function ViewRecipe({ recipeToView, setRecipeToView, setInViewMode, allRecipes, setAllRecipes, categories }) {
+export function ViewRecipe({ recipeToView, setRecipeToView, setInRecipeViewMode, allRecipes, setAllRecipes, categories }) {
     const [editMode, setEditMode] = useState(false)
 
     const toggleFavorite = () => {
@@ -19,7 +19,7 @@ export function ViewRecipe({ recipeToView, setRecipeToView, setInViewMode, allRe
     const deleteRecipe = () => {
         const updatedRecipes = allRecipes.filter(recipe => recipe.id !== recipeToView.id)
         setAllRecipes(updatedRecipes)
-        setInViewMode(false)
+        setInRecipeViewMode(false)
         window.scrollTo(0, 0);
     }
 
@@ -40,7 +40,7 @@ export function ViewRecipe({ recipeToView, setRecipeToView, setInViewMode, allRe
     return (
         <section className='max-w-5xl m-auto p-8'>
             <div className={`h-36 bg-[url('/${recipeToView.imageURL}')] bg-cover bg-center`}>
-                <button className="btn btn-primary m-3" onClick={() => setInViewMode(false)}>back</button>
+                <button className="btn btn-primary m-3" onClick={() => setInRecipeViewMode(false)}>back</button>
             </div>
 
             <div className="grid min-[1000px]:grid-cols-3">
@@ -59,7 +59,7 @@ export function ViewRecipe({ recipeToView, setRecipeToView, setInViewMode, allRe
 
                 <div className="p-5 flex flex-col gap-5 min-[1000px]:col-span-2">
                     {!editMode ? (
-                        <div className="">
+                        <div>
                             <h1 className="text-secondary font-bold text-3xl">{recipeToView.name}</h1>
                             <p className="italic text-accent font-sm">Source: {recipeToView.source}</p>
                             <p className="italic text-accent font-sm">Category: {recipeToView.category}</p>
