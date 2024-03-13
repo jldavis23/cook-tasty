@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { ViewRecipe } from './components/ViewRecipe';
 
 export default function Home() {
-    const categories = [...new Set(recipeData.map(recipe => recipe.category))];
+    const [categories, setCategories] = useState([...new Set(recipeData.map(recipe => recipe.category))])
     const [allRecipes, setAllRecipes] = useState(recipeData)
     const [filteredRecipes, setFilteredRecipes] = useState([])
     const [inViewMode, setInViewMode] = useState(false)
@@ -66,7 +66,7 @@ export default function Home() {
                     </div>
                 </section>
             ) : (
-                <ViewRecipe recipeToView={recipeToView} setRecipeToView={setRecipeToView} setInViewMode={setInViewMode} allRecipes={allRecipes} setAllRecipes={setAllRecipes} />
+                <ViewRecipe recipeToView={recipeToView} setRecipeToView={setRecipeToView} setInViewMode={setInViewMode} allRecipes={allRecipes} setAllRecipes={setAllRecipes} categories={categories}/>
             )}
 
 
